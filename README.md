@@ -24,7 +24,7 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- PYTHON,HTML,,JAVASCRIPT,CSS
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
