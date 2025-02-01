@@ -6,7 +6,7 @@
 
 
 ### Team Members
-- Member 1: [Name] - [College]
+- Member 1: [AISWARYA K V] - [College]
 - Member 2: [Name] - [College]
 - Member 3: [Name] - [College]
 

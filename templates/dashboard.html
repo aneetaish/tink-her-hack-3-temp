@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Connect - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, Mom!</h1>
+        <div class="icons-grid">
+            <a href="/diet_chart" class="icon-card">
+                <i class="fas fa-utensils"></i>
+                <span>Diet Chart</span>
+            </a>
+            <a href="/guidelines" class="icon-card">
+                <i class="fas fa-book-medical"></i>
+                <span>Guidelines</span>
+            </a>
+            <a href="/mentor" class="icon-card">
+                <i class="fas fa-user-md"></i>
+                <span>Mentor</span>
+            </a>
+            <a href="/fitness" class="icon-card">
+                <i class="fas fa-running"></i>
+                <span>Fitness</span>
+            </a>
+        </div>
+        
+        <div class="hvp-guidelines">
+            <h2>HVP Guidelines</h2>
+            <div class="guidelines-content">
+                <!-- Add HVP guidelines content here -->
+            </div>
+        </div>
+        
+        <div class="medication-reminder">
+            <h2>Medication Reminders</h2>
+            <form id="medication-form">
+                <input type="text" id="med-name" placeholder="Medication Name">
+                <input type="time" id="med-time">
+                <button type="submit">Add Reminder</button>
+            </form>
+            <div id="reminders-list"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
