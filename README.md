@@ -6,9 +6,8 @@
 
 
 ### Team Members
-- Member 1: [AISWARYA K V] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [AISWARYA K V] - [ASET]
+- Member 2: [ANEETA P] -[ASET]
 
 ### Hosted Project Link
 [mention your project hosted project link here]
