@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Connect - Login</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Baby Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Baby Connect</h1>
-        <form action="/authenticate" method="post" class="login-form">
+        <form class="login-form">
+            <h1>Baby Connect</h1>
             <input type="tel" name="phone" placeholder="Enter your phone number" required>
             <button type="submit">Continue</button>
         </form>

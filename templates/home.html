@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Connect - Profile</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Complete Your Profile</h1>
-        <form action="/update_profile" method="post" class="profile-form">
-            <input type="date" name="dob" placeholder="Date of Birth" required>
-            <input type="number" name="pregnancy_weeks" placeholder="Weeks of Pregnancy" required>
-            <input type="number" step="0.01" name="height" placeholder="Height (cm)" required>
-            <input type="number" step="0.01" name="weight" placeholder="Weight (kg)" required>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Baby Connect</h1>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="login-form">
+            <h1>Complete Your Profile</h1>
+            <form action="/update_profile" method="post">
+                <input type="date" name="dob" placeholder="Date of Birth" required>
+                <input type="number" name="pregnancy_weeks" placeholder="Weeks of Pregnancy" required>
+                <input type="number" step="0.01" name="height" placeholder="Height (cm)" required>
+                <input type="number" step="0.01" name="weight" placeholder="Weight (kg)" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

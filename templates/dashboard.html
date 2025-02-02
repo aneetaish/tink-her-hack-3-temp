@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Connect - Dashboard</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Baby Connect</h1>
+        </div>
+    </nav>
+
     <div class="dashboard">
         <h1>Welcome, Mom!</h1>
+        
         <div class="icons-grid">
             <a href="/diet_chart" class="icon-card">
                 <i class="fas fa-utensils"></i>
@@ -32,7 +39,7 @@
         <div class="hvp-guidelines">
             <h2>HVP Guidelines</h2>
             <div class="guidelines-content">
-                <!-- Add HVP guidelines content here -->
+                <p>Important guidelines for a healthy pregnancy will appear here.</p>
             </div>
         </div>
         
@@ -46,6 +53,7 @@
             <div id="reminders-list"></div>
         </div>
     </div>
+
     <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
 </body>
 </html>

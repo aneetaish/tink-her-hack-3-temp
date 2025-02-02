@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Baby Connect</h1>
+            <ul class="nav-links">
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="login-form">
+            <h1>Baby Connect</h1>
+            <form action="/authenticate" method="post">
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                <button type="submit">Continue</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html> 
